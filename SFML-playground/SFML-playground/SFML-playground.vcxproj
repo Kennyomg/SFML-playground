@@ -100,11 +100,9 @@
   <ItemGroup>
     <Image Include="resources\textures\background-space.jpg" />
     <Image Include="resources\textures\background.png" />
-    <Image Include="src\resources\textures\background.png" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="resources\fonts\font.ttf" />
-    <Font Include="src\resources\fonts\font.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
