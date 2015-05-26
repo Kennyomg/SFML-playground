@@ -42,14 +42,14 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\Kenny\Source\Repos\SFML-playground\SFML-playground\Dependencies\SFML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Kenny\Source\Repos\SFML-playground\SFML-playground\Dependencies\SFML\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\SFML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\SFML\lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\Kenny\Source\Repos\SFML-playground\SFML-playground\Dependencies\SFML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Kenny\Source\Repos\SFML-playground\SFML-playground\Dependencies\SFML\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Dependencies\SFML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Dependencies\SFML\lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\$(Configuration)\Intermediate\</IntDir>
   </PropertyGroup>

@@ -4,12 +4,22 @@
 #include "game_state_physics.hpp"
 #include "../game_state.hpp"
 
+void GameStatePhysics::init()
+{
+	sf::Vector2f pos = sf::Vector2f(this->game->window.getSize());
+	this->view.setSize(pos);
+	pos *= 0.5f;
+	this->view.setCenter(pos);
+	this->game->texmgr.loadTexture("physics_background", "resources/textures/background.png");
+	this->game->background.setTexture(this->game->texmgr.getRef("physics_background"));
+}
+
 void GameStatePhysics::draw(const float dt)
 {
 	this->game->window.setView(this->view);
 
 	this->game->window.clear(sf::Color::Black);
-	//this->game->window.draw(this->game->background);
+	this->game->window.draw(this->game->background);
 
 	return;
 }
@@ -50,8 +60,5 @@ GameStatePhysics::GameStatePhysics(Game* game)
 {
 	std::cout << "Physics are easy!" << std::endl;
 	this->game = game;
-	sf::Vector2f pos = sf::Vector2f(this->game->window.getSize());
-	this->view.setSize(pos);
-	pos *= 0.5f;
-	this->view.setCenter(pos);
+	this->init();
 }

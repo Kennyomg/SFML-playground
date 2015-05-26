@@ -14,6 +14,8 @@ private:
 
 	sf::View view;
 
+	void init();
+
 public:
 
 	virtual void draw(const float dt);
