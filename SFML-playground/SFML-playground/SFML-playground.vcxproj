@@ -80,10 +80,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\gamestates\editor\game_state_editor.cpp" />
+    <ClCompile Include="src\gamestates\game.cpp" />
+    <ClCompile Include="src\gamestates\physics\game_state_physics.cpp" />
+    <ClCompile Include="src\gamestates\start\game_state_start.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\managers\texture\texture_manager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\FPS.h" />
+    <ClInclude Include="src\gamestates\editor\game_state_editor.hpp" />
+    <ClInclude Include="src\gamestates\game.hpp" />
+    <ClInclude Include="src\gamestates\game_state.hpp" />
+    <ClInclude Include="src\gamestates\physics\game_state_physics.hpp" />
+    <ClInclude Include="src\gamestates\start\game_state_start.hpp" />
+    <ClInclude Include="src\gui\gui.hpp" />
+    <ClInclude Include="src\managers\texture\texture_manager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\textures\background-space.jpg" />
+    <Image Include="resources\textures\background.png" />
+    <Image Include="src\resources\textures\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fonts\font.ttf" />
+    <Font Include="src\resources\fonts\font.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
